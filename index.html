@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MusOn — Your Gateway to Unforgettable Music Events</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@500&display=swap"
+    rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ============ HERO ============ -->
+  <div class="hero-wrap">
+    <div class="hero-bg"></div>
+    <div class="hero-gradient"></div>
+    <!-- Brand sticker -->
+    <div class="brand-sticker">
+      <!-- <img src="Brand Label.png" alt="MusOn Logo"> -->
+      <!-- <div class="sticker-bg"></div>
+    <div class="sticker-pill">
+      <span class="note">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18V5l12-2v13" stroke="#000" stroke-width="1.5"/><circle cx="6" cy="18" r="3" stroke="#000" stroke-width="1.5"/><circle cx="18" cy="16" r="3" stroke="#000" stroke-width="1.5"/></svg>
+      </span>
+      <span class="brand-name">MusOn</span>
+    </div> -->
+    </div>
+
+    <nav class="navbar-custom">
+      <button class="btn-about">About us</button>
+      <div class="lang-toggle" id="langToggle">
+        <span>EN</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M6 9l6 6 6-6" stroke="#fffafa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="d-flex align-items-center gap-2 ms-auto">
+        <button class="nav-icon-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" />
+            <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <button class="nav-icon-btn" aria-label="Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2" />
+            <path d="M4 20c0-4 3.6-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="2" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Your Gateway to<br>Unforgettable Music Events</h1>
+      <p class="lead-text">Discover, book, and experience the best concerts and festivals in your city</p>
+      <a href="#" class="btn-brand">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3v13m0 0l-4-4m4 4l4-4M5 21h14" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        Download Free App
+      </a>
+    </div>
+  </div>
+
+  <!-- ============ FEATURED EVENTS ============ -->
+  <section class="section-pad">
+    <div class="container-xl">
+      <h2 class="section-title">Featured Events</h2>
+      <p class="section-sub">Don't miss out on these incredible live music experiences happening near you</p>
+
+      <div class="events-toolbar">
+        <div class="tablist" id="tablist">
+          <button class="tab-btn active" data-filter="all">All</button>
+          <button class="tab-btn" data-filter="trending">Trending</button>
+          <button class="tab-btn" data-filter="tonight">Tonight</button>
+          <button class="tab-btn" data-filter="foryou">For you</button>
+        </div>
+        <button class="btn-show-more" id="showMoreBtn">Show More</button>
+      </div>
+
+      <div class="event-cards" id="eventCards">
+        <!-- Card 1 -->
+        <article class="event-card" data-tags="trending foryou">
+          <div class="card-img"
+            style="background-image:url('https://www.figma.com/api/mcp/asset/0c26b1b4-1cb6-4904-8d7c-06227ab259ea')">
+            <button class="fav-btn" aria-label="Save event">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 21s-7-4.35-9.5-8.5C.7 8.5 3 5 6.5 5c2 0 3.5 1.2 5.5 3.5C14 6.2 15.5 5 17.5 5 21 5 23.3 8.5 21.5 12.5 19 16.65 12 21 12 21z"
+                  stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <h3>Summer Music Festival 2025</h3>
+            <div class="event-meta">
+              <div class="row-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M8 3v4M16 3v4M3 10h18" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+                <span>July 15, 2025</span>
+              </div>
+              <div class="row-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+                <span>6:00 PM - 11:00 PM</span>
+              </div>
+              <div class="row-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 21s7-6.5 7-11.5A7 7 0 105 9.5C5 14.5 12 21 12 21z" stroke="currentColor"
+                    stroke-width="1.6" />
+                  <circle cx="12" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+                <span>Central Park, New York</span>
+              </div>
+            </div>
+            <div class="event-price">From $89</div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="event-card" data-tags="trending tonight">
+          <div class="card-img"
+            style="background-image:url('https://www.figma.com/api/mcp/asset/8e24438f-cb68-47e4-aa3c-b899109b49cf')">
+            <button class="fav-btn" aria-label="Save event">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 21s-7-4.35-9.5-8.5C.7 8.5 3 5 6.5 5c2 0 3.5 1.2 5.5 3.5C14 6.2 15.5 5 17.5 5 21 5 23.3 8.5 21.5 12.5 19 16.65 12 21 12 21z"
+                  stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <h3>Rock Legends Live</h3>
+            <div class="event-meta">
+              <div class="row-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M8 3v4M16 3v4M3 10h18" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+                <span>August 3, 2025</span>
+              </div>
+              <div class="row-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+                <span>8:00 PM - 12:00 AM</span>
+              </div>
+              <div class="row-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 21s7-6.5 7-11.5A7 7 0 105 9.5C5 14.5 12 21 12 21z" stroke="currentColor"
+                    stroke-width="1.6" />
+                  <circle cx="12" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+                <span>Madison Square Garden</span>
+              </div>
+            </div>
+            <div class="event-price">From $125</div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="event-card" data-tags="tonight foryou">
+          <div class="card-img"
+            style="background-image:url('https://www.figma.com/api/mcp/asset/3ffd04f1-7531-41af-acc7-8b9c51c67634')">
+            <button class="fav-btn" aria-label="Save event">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 21s-7-4.35-9.5-8.5C.7 8.5 3 5 6.5 5c2 0 3.5 1.2 5.5 3.5C14 6.2 15.5 5 17.5 5 21 5 23.3 8.5 21.5 12.5 19 16.65 12 21 12 21z"
+                  stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <h3>Electronic Nights</h3>
+            <div class="event-meta">
+              <div class="row-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M8 3v4M16 3v4M3 10h18" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+                <span>September 10, 2025</span>
+              </div>
+              <div class="row-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+                <span>10:00 PM - 4:00 AM</span>
+              </div>
+              <div class="row-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 21s7-6.5 7-11.5A7 7 0 105 9.5C5 14.5 12 21 12 21z" stroke="currentColor"
+                    stroke-width="1.6" />
+                  <circle cx="12" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+                <span>Warehouse District</span>
+              </div>
+            </div>
+            <div class="event-price">From $65</div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="event-card" data-tags="foryou">
+          <div class="card-img"
+            style="background-image:url('https://www.figma.com/api/mcp/asset/53b09aec-c209-480c-8dc0-0153587bc1f4')">
+            <button class="fav-btn" aria-label="Save event">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 21s-7-4.35-9.5-8.5C.7 8.5 3 5 6.5 5c2 0 3.5 1.2 5.5 3.5C14 6.2 15.5 5 17.5 5 21 5 23.3 8.5 21.5 12.5 19 16.65 12 21 12 21z"
+                  stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <h3>Jazz Under the Stars</h3>
+            <div class="event-meta">
+              <div class="row-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M8 3v4M16 3v4M3 10h18" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+                <span>October 5, 2025</span>
+              </div>
+              <div class="row-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+                <span>7:00 PM - 10:00 PM</span>
+              </div>
+              <div class="row-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 21s7-6.5 7-11.5A7 7 0 105 9.5C5 14.5 12 21 12 21z" stroke="currentColor"
+                    stroke-width="1.6" />
+                  <circle cx="12" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+                <span>Rooftop Garden</span>
+              </div>
+            </div>
+            <div class="event-price">From $45</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE OUR APP ============ -->
+  <section class="section-pad why-section">
+    <div class="container-xl">
+      <h2 class="section-title">Why Choose Our App?</h2>
+      <p class="section-sub mb-4">Everything you need to discover and enjoy live music in one place</p>
+
+      <div class="feature-grid mt-4">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <path d="M12 22c1.1 0 2-.9 2-2h-4a2 2 0 002 2zm6-6v-5a6 6 0 10-12 0v5l-2 2v1h16v-1l-2-2z"
+                stroke="var(--ink)" stroke-width="1.5" />
+            </svg>
+          </div>
+          <h3>Event Alerts</h3>
+          <p>Get notified when your favorite artists announce new shows in your area</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <rect x="3" y="4" width="18" height="17" rx="2" stroke="var(--ink)" stroke-width="1.5" />
+              <path d="M3 9h18M8 2v4M16 2v4" stroke="var(--ink)" stroke-width="1.5" />
+              <path d="M9 14l2 2 4-4" stroke="var(--ink)" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Easy Booking</h3>
+          <p>Book tickets in seconds with our streamlined checkout process and digital tickets</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <circle cx="11" cy="11" r="7" stroke="var(--ink)" stroke-width="1.5" />
+              <path d="M21 21l-4-4" stroke="var(--ink)" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M11 8v6M8 11h6" stroke="var(--ink)" stroke-width="1.2" />
+            </svg>
+          </div>
+          <h3>Smart Discovery</h3>
+          <p>Find events tailored to your music taste with our AI-powered recommendation engine</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <path d="M12 3l2.5 5.5L20 9l-4.2 4 1 5.6L12 16l-4.8 2.6 1-5.6L4 9l5.5-.5z" stroke="var(--ink)"
+                stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Exclusive Access</h3>
+          <p>Get early access to presales and exclusive VIP packages for premium members</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <circle cx="8" cy="9" r="3" stroke="var(--ink)" stroke-width="1.5" />
+              <circle cx="17" cy="9" r="3" stroke="var(--ink)" stroke-width="1.5" />
+              <path d="M2 21c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M12 21c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5" stroke="var(--ink)"
+                stroke-width="1.5" />
+            </svg>
+          </div>
+          <h3>Social Features</h3>
+          <p>Connect with friends, share events, and coordinate group bookings effortlessly</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 21s-7-4.35-9.5-8.5C.7 8.5 3 5 6.5 5c2 0 3.5 1.2 5.5 3.5C14 6.2 15.5 5 17.5 5 21 5 23.3 8.5 21.5 12.5 19 16.65 12 21 12 21z"
+                stroke="var(--ink)" stroke-width="1.5" />
+            </svg>
+          </div>
+          <h3>Favorites</h3>
+          <p>Save events and artists you love to build your personalized music calendar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section-pad cta-section">
+    <div class="container-xl d-flex flex-column align-items-center gap-3">
+      <h2>Ready to Experience Live Music?</h2>
+      <p class="mb-3">Join thousands of music lovers who trust our app to discover and book the best events</p>
+      <a href="#" class="btn-brand">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3v13m0 0l-4-4m4 4l4-4M5 21h14" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        Download Free App
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ STATS FOOTER ============ -->
+  <footer class="stats-section">
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="num" id="stat1">0</span>
+        <span class="label">Events Monthly</span>
+      </div>
+      <div class="stat-item">
+        <span class="num" id="stat2">0</span>
+        <span class="label">Active Users</span>
+      </div>
+      <div class="stat-item">
+        <span class="num" id="stat3">0</span>
+        <span class="label">Cities Covered</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // ---- Tab filter for event cards ----
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const cards = document.querySelectorAll('.event-card');
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.tags.includes(filter)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // ---- Show more (placeholder demo action) ----
+    document.getElementById('showMoreBtn').addEventListener('click', () => {
+      alert('More events would load here.');
+    });
+
+    // ---- Favorite / heart toggle ----
+    document.querySelectorAll('.fav-btn').forEach(btn => {
+      btn.addEventListener('click', () => btn.classList.toggle('active'));
+    });
+
+    // ---- Language dropdown (visual toggle only) ----
+    document.getElementById('langToggle').addEventListener('click', function () {
+      this.classList.toggle('open');
+    });
+
+    // ---- Animated stat counters on scroll into view ----
+    const stats = [
+      { el: document.getElementById('stat1'), target: 500, suffix: '+' },
+      { el: document.getElementById('stat2'), target: 100000, suffix: '+', format: v => (v / 1000).toFixed(0) + 'K' },
+      { el: document.getElementById('stat3'), target: 50, suffix: '+' }
+    ];
+
+    function animateStats() {
+      stats.forEach(stat => {
+        let current = 0;
+        const step = Math.max(1, Math.ceil(stat.target / 60));
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= stat.target) {
+            current = stat.target;
+            clearInterval(timer);
+          }
+          const display = stat.format ? stat.format(current) : current;
+          stat.el.textContent = display + stat.suffix;
+        }, 20);
+      });
+    }
+
+    const statsSection = document.querySelector('.stats-section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateStats();
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.4 });
+    observer.observe(statsSection);
+  </script>
+</body>
+
+</html>
