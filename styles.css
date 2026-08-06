@@ -49,24 +49,24 @@ h3 {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('https://www.figma.com/api/mcp/asset/9754c963-16ce-4564-ba63-b6b630210776') center/cover no-repeat;
-  z-index: 0;
+  background: url('Music Festival.png') center/cover no-repeat;
+  z-index: 1;
 }
 
 .hero-gradient {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 2;
   background: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.6) 0%,
       rgba(0, 0, 0, 0.5) 40%,
       rgba(255, 255, 255, 1) 82%);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(3px);
 }
 
 .navbar-custom {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   display: flex;
   align-items: center;
