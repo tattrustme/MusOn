@@ -237,8 +237,8 @@ h3 {
 
 .events-toolbar {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
   gap: 16px;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -252,6 +252,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 2px;
+  flex-shrink: 0;
 }
 
 .tablist .tab-btn {
@@ -264,6 +265,7 @@ h3 {
   color: #0a0a0a;
   transition: background .2s ease, box-shadow .2s ease;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .tablist .tab-btn.active {
@@ -279,6 +281,8 @@ h3 {
   padding: 9px 24px;
   font-size: 16px;
   box-shadow: 0 2px 2.5px rgba(0, 0, 0, .2);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .event-cards {
