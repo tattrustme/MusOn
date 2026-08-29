@@ -179,14 +179,13 @@ h3 {
 .brand-sticker {
   position: absolute;
   width: 220px;
-  height: 80px;
+  height: 70px;
   background: url('Brand Label Small.png') center/cover no-repeat;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
   display: flex;
-  overflow: hidden;
   flex-direction: column;
   align-items: center;
 }
