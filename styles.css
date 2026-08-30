@@ -190,7 +190,7 @@ h3 {
 .logo-img {
   width: auto;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* .sticker-bg{
