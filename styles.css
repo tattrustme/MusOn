@@ -191,6 +191,7 @@ h3 {
   width: auto;
   height: auto;
   object-fit: cover;
+  filter: drop-shadow(0, 4, 10, rgba (135, 135, 135, 0.2))
 }
 
 /* .sticker-bg{
