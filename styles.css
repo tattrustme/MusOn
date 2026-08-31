@@ -241,7 +241,7 @@ h3 {
 }
 
 .events-toolbar {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: flex-start;
   gap: 16px;
@@ -254,7 +254,7 @@ h3 {
   background: #cacaca;
   border-radius: 16px;
   padding: 4px;
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   gap: 2px;
