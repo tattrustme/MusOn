@@ -320,7 +320,7 @@ h3 {
   height: 192px;
   object-fit: cover;
   object-position: center;
-  display: block;
+  /* display: block; */
 }
 
 .fav-btn {
