@@ -241,12 +241,13 @@ h3 {
 }
 
 .events-toolbar {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 16px;
   flex-wrap: nowrap;
   overflow-x: auto;
+  width: 100%;
   margin: 32px 0;
 }
 
