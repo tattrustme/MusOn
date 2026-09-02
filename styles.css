@@ -247,7 +247,7 @@ h3 {
   overflow-x: auto;
   white-space: nowrap;
   width: 100%;
-  margin: 32px 0;
+  margin: 24px 0;
   scrollbar-width: none;
 }
 
@@ -261,7 +261,7 @@ h3 {
   overflow-x: auto;
   white-space: nowrap;
   width: 100%;
-  margin: 32px 0;
+  margin: 0;
 }
 
 .tablist .tab-btn {
