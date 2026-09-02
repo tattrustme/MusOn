@@ -256,6 +256,11 @@ h3 {
   padding: 4px;
   display: flex;
   gap: 2px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  margin: 32px 0;
 }
 
 .tablist .tab-btn {
